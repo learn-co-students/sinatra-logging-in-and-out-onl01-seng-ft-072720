@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
   </head>
   <body id="page-top">
-    
+
+    <h1> Welcome, <%=Helper::current_user.name%></h1>
+    <h3>Your balance is: <%=Helper::current_user.balance%></h3>
+
+    <form method='POST' action='/logout'>
+    <input type="submit" name="Log Out" value="Log Out"b >
+    </form>
+
 
   </body>
 </html>
